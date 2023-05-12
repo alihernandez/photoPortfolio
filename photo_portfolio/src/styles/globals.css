@@ -1,0 +1,89 @@
+html, body {
+  background-color: #000000;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Merriweather', serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.logo{
+  display: flex;
+  position: absolute;
+}
+
+.logo, img{
+  z-index: 0;
+  height: 30%;
+  
+}
+
+.navtitle{
+  z-index: 1;
+  color: #a275af;
+  opacity: 75%;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 90svh;
+}
+
+.blob {
+  background-color: #7a43e7a8;
+  border-radius: 30% 70% 20% 80% / 39% 25% 75% 61% ;
+  height: 500px;
+  width: 400px;
+  z-index: 0;
+}
+
+.bio {
+  position: absolute;
+  left: 0px;
+  background-color: #54007D;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 50%;
+  height: 45svh;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+
+
+.bio, article {
+  font-family: 'Mulish', sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #a275af;
+  color: white;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
