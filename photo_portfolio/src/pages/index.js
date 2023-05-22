@@ -7,19 +7,13 @@ export default function Home() {
         <title>Kingsland Photography</title>
         <meta name="description" content="Kingsland Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,300;0,700;1,300&display=swap"
-          rel="stylesheet"
-        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 <div className="home">
   <div className="blob"></div>
 <div className="bio">
      
-     <span>PICTURE HERE</span>
+     <img id="bioPic" src="https://res.cloudinary.com/alidevcloud/image/upload/v1684717509/DSC_7851Edit_lbllzr.jpg" />
      <h1>Haley Abrams</h1>
      <article>
        Born Fort Collins, Colorado, USA, 1993 2015 Bachelors in Fine Arts
@@ -41,6 +35,21 @@ export default function Home() {
        as in the studio, incorporating sophisticated props and materials to
        create stunning images that go beyond traditional advertising.
      </article>
+   </div>
+
+   <div className="contact">
+    <h2>Contact me today!</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text"></input>
+      <label>Email:</label>
+      <input type="text"></input>
+      <label>Message:</label>
+      <input type="text"></input>
+      <label>Phone:</label>
+      <input type="number"></input>
+      <button type="submit">Send Message</button>
+    </form>
    </div>
 </div>
       
