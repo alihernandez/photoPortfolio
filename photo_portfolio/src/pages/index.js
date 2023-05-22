@@ -13,7 +13,7 @@ export default function Home() {
   <div className="blob"></div>
 <div className="bio">
      
-     <span>PICTURE HERE</span>
+     <img id="bioPic" src="https://res.cloudinary.com/alidevcloud/image/upload/v1684717509/DSC_7851Edit_lbllzr.jpg" />
      <h1>Haley Abrams</h1>
      <article>
        Born Fort Collins, Colorado, USA, 1993 2015 Bachelors in Fine Arts

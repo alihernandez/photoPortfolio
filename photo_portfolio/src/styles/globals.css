@@ -47,11 +47,17 @@ nav {
 }
 
 .contact {
+  border: 1px solid #aea4a4;
+  border-radius: 5px;
   position: absolute;
   background-color: #3d3d3d;
   max-width: 35%;
   right: 5px;
   padding: 1em;
+}
+
+.contact button {
+  margin: 1em;
 }
 .blob {
   background-color: #7a43e7a8;
@@ -62,25 +68,32 @@ nav {
 }
 
 .bio {
+  border-radius: 25px;
   position: absolute;
   left: 0px;
   background-color: #54007D;
   color: rgb(255, 255, 255);
   text-align: center;
   width: 50%;
-  height: 45svh;
+  height: 50svh;
   overflow-y: scroll;
   z-index: 1;
 }
 
+#bioPic {
+  max-height: 75%;
+  max-width: 75%;
+  object-fit: contain;
+  padding: 1em;
+}
 
-
-.bio, article {
+.bio article {
   font-family: 'Mulish', sans-serif;
 }
 
 .portraits {
   margin: 0 auto;
+  padding: 2.5rem;
   border: 2px solid #54007d;
   display: flex;
   flex-direction: column;
@@ -88,7 +101,8 @@ nav {
   align-items: center;
   background-color: #3d3d3d;
   width: 80svw;
-  height: 75svh;
+  height: 70svh;
+ overflow-y: scroll;
 }
 
 .landscape {
@@ -111,14 +125,15 @@ nav {
 .column {
   flex: 25%;
   padding: 0 4px;
+  height: 10%;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-   max-height: 50vh;
-   object-fit: cover;
-   max-width: 50svw;
+   width: 200px;
+   height: 300px;
+   object-fit: scale-down;
 }
 
 .pagecontent {
