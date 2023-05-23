@@ -1,5 +1,5 @@
 html, body {
-  background-color: #000000;
+  background-color: #454545;
   margin: 0;
 }
 
@@ -14,8 +14,8 @@ nav {
   height: 10vh;
   width: 100%;
   text-align: center;
-  color: #ffffff;
-  background-color: #000000;
+  color: #0000007d;
+  background-color: #a275af;
 }
 
 .logo{
@@ -32,7 +32,8 @@ nav {
 
 .navtitle{
   z-index: 1;
-  color: #a275af;
+  color: #000000d1;
+  text-shadow: #54007D;
   opacity: 75%;
 }
 
@@ -47,13 +48,14 @@ nav {
 }
 
 .contact {
+  margin: 0 auto;
   border: 1px solid #aea4a4;
   border-radius: 5px;
-  position: absolute;
+  /* position: absolute; */
   background-color: #3d3d3d;
-  max-width: 35%;
-  right: 5px;
-  padding: 1em;
+  max-width: 75%;
+  height: fit-content;
+  margin: 3em;
 }
 
 .contact button {
@@ -68,21 +70,23 @@ nav {
 }
 
 .bio {
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
   border-radius: 25px;
   position: absolute;
-  left: 0px;
-  background-color: #54007D;
+  background-color: #53007d9b;
   color: rgb(255, 255, 255);
   text-align: center;
-  width: 50%;
-  height: 50svh;
+  width: 75%;
+  height: 75svh;
   overflow-y: scroll;
   z-index: 1;
 }
 
 #bioPic {
   max-height: 75%;
-  max-width: 75%;
+  width: 75%;
   object-fit: contain;
   padding: 1em;
 }
@@ -92,12 +96,9 @@ nav {
 }
 
 .portraits {
-  margin: 0 auto;
+  text-align: center;
   padding: 2.5rem;
   border: 2px solid #54007d;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #3d3d3d;
   width: 80svw;
@@ -125,15 +126,13 @@ nav {
 .column {
   flex: 25%;
   padding: 0 4px;
-  height: 10%;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-   width: 200px;
-   height: 300px;
-   object-fit: scale-down;
+  width: 100%;
+   object-fit: contain;
 }
 
 .pagecontent {
