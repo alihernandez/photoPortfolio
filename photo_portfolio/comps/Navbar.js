@@ -1,18 +1,51 @@
-import Link from "next/link";
+import Image from "next/image";
+import hklogo from "../public/hklogo.png"
+// import bars from "../public/bars-solid"
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
+  const handleClick = () => {
+    console.log('fff');
+      const primaryNav = document.querySelector(".primary-navigation");
+      const navToggle = document.querySelector(".mobile-toggle");
+    console.log(primaryNav)
+    const visibility = primaryNav.getAttribute("data-visable"); 
+    console.log(visibility)
+    if (visibility === "false") {
+      primaryNav.setAttribute('data-visable', true)
+      navToggle.setAttribute('aria-expanded', true)
+    } else if (visibility === "true") {
+      primaryNav.setAttribute('data-visable', false)
+      navToggle.setAttribute('aria-expanded', false)
+    }
+   
+    
+  }
+
+
   return (
-    <nav>
-      <div className="logo">
-        <img src="https://static.wixstatic.com/media/aebaa7_090fb1a2b5d34c418af64c8ebab58b76.png/v1/fill/w_196,h_196,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/aebaa7_090fb1a2b5d34c418af64c8ebab58b76.png"></img>
-        <Link href="/">Home</Link>
-        <Link href="/portraits">Portraits</Link>
-        <Link href="/landscape">Landscape</Link>
-        <a>Other Works</a>
-        
+    <header className="primary-header flex">
+    <div className="nav">
+     <Image className="logo" src={hklogo} />
       </div>
-      <h2 className="navtitle"><b>Kingsland Photography</b></h2>
+      <button onClick={() => {handleClick()}} className="mobile-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+    <nav>
+      <ul data-visable="false" id="primary-navigaton" className="primary-navigation flex">
+        <li>
+          <span>Home</span>
+        </li>
+        <li>
+          <span>Portraits</span>
+        </li>
+        <li>
+          <span>Landscape</span>
+        </li>
+        <li>
+          <span>Other Works</span>
+        </li>
+      </ul>
     </nav>
+    </header>
   );
 };
 
