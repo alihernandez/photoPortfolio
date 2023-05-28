@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5 {
   font-family: 'Merriweather', serif;
 }
 
+a:visited {
+  color: rgba(255, 255, 255, 0.29);
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 1em);
@@ -41,6 +45,7 @@ h1, h2, h3, h4, h5 {
 .mobile-toggle {
   display: none;
 }
+
 
 /* oncl + div.primary-navigation >ul {
   display:block;
@@ -89,6 +94,10 @@ h1, h2, h3, h4, h5 {
     top: 1rem;
     right: 2rem;
    
+  }
+
+  .mobile-toggle[aria-expanded="true"] {
+    background: url("../../public/circle-xmark-regular.svg");
   }
 }
 
@@ -159,8 +168,9 @@ h1, h2, h3, h4, h5 {
   left: 50%; 
   transform: translate(-50%, -50%);
   border-radius: 25px;
+  box-shadow: 0px 4px 8px 6px rgba(0, 0, 0, 0.492);
   position: absolute;
-  background-color: #53007d9b;
+  background-color: #53007dca;
   color: rgb(255, 255, 255);
   text-align: center;
   width: 75%;
@@ -208,6 +218,7 @@ h1, h2, h3, h4, h5 {
   padding-top: 2rem;
   padding-bottom: 7rem;
   place-items: center;
+  margin-left: 5px;
 }
 
 @media (width > 500px) {
@@ -221,7 +232,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .card {
+  /* box-shadow: 0px 2px 12px 6px rgba(0, 0, 0, 0.634); */
   object-fit: contain;
+  
 }
 
 /* .landscape[data-columns="2"] {

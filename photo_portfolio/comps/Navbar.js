@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import hklogo from "../public/hklogo.png"
 // import bars from "../public/bars-solid"
 import { useState, useEffect, useRef } from "react";
@@ -27,21 +28,22 @@ const Navbar = () => {
     <header className="primary-header flex">
     <div className="nav">
      <Image className="logo" src={hklogo} />
+     <h3>Kingland Photography</h3>
       </div>
       <button onClick={() => {handleClick()}} className="mobile-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
     <nav>
       <ul data-visable="false" id="primary-navigaton" className="primary-navigation flex">
         <li>
-          <span>Home</span>
+          <Link href='/'>Home</Link>
         </li>
         <li>
-          <span>Portraits</span>
+          <Link href='/portraits'>Portraits</Link>
         </li>
         <li>
-          <span>Landscape</span>
+          <Link href='/landscape'>Landscape</Link>
         </li>
         <li>
-          <span>Other Works</span>
+          <Link href='/otherWorks'>Other Works</Link>
         </li>
       </ul>
     </nav>
